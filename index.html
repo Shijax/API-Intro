@@ -16,13 +16,19 @@
 </head>
 
 <body>
-
+    <!-- Title -->
     <h1 id="title">&lt; API Intro: How I Lost My Sanity Today &gt;</h1>
+    <!-- End Title -->
 
+    <!-- Print to DOM DIV -->
     <div id="joke"></div>
+    <!-- End Print to DOM DIV -->
+
+    <!-- Refresh Button -->
     <div class="row d-flex justify-content-center m-4">
-        <button type="submit" onClick="refreshPage()" class="button">Refresh Button</button>
+        <button type="button" class="btn btn-warning button" onClick="refreshPage()">Ugggh, Tell Me A New Joke</button>
     </div>
+    <!-- End Refresh Button -->
 
     <!-- Boot Strap JS -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -31,10 +37,23 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <!-- Site Specific JS -->
+    <!-- End Boot Strap JS -->
+
+    <!-- Refresh Button JS -->
     <script>function refreshPage() { window.location.reload(); }</script>
+    <!-- End Refresh Button JS -->
+
+    <!-- Site Specific JS -->
     <script src="./javascripts/jokes.js" type="module"></script>
     <script src="./javascripts/main.js" type="module"></script>
+    <!-- End Site Specific JS -->
 </body>
 
 </html>
+
+<!--
+Coded by Matthew Jackson for Nashville Software School
+Introduction to APIs
+Cohort E8 - Instructors: Zoe Ames, Callan Morrison, Lauren Rouse
+October 27, 2018
+-->
