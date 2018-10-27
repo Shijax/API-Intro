@@ -17,17 +17,24 @@
 
 <body>
 
-    <h1 id="title" class="titleImg">API Intro</h1>
+    <h1 id="title">&lt; API Intro: How I Lost My Sanity Today &gt;</h1>
 
+    <div id="joke"></div>
+    <div class="row d-flex justify-content-center m-4">
+        <button type="submit" onClick="refreshPage()" class="button">Refresh Button</button>
+    </div>
 
     <!-- Boot Strap JS -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!-- Site Specific JS -->
-    <script src="./main.js" type="module"></script>
+    <script>function refreshPage() { window.location.reload(); }</script>
+    <script src="./javascripts/jokes.js" type="module"></script>
+    <script src="./javascripts/main.js" type="module"></script>
 </body>
-
-<div id="joke"></div>
 
 </html>
